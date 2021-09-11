@@ -124,7 +124,7 @@
                             <a href="{% url 'car_detail' car.id %}" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                
+
                                     <br>
                                     <span>${{car.price | intcomma}}</span>
                                 </div>
@@ -299,14 +299,14 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
         <!-- Slick slider area start -->
-        <div class="slick-slider-area clearfix">
+        <div class="slick-slider-area clearfix" >
             <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
               {% for team in teams %}
                 <div class="slick-slide-item">
                     <div class="team-1">
                         <div class="photo">
                             <a href="#">
-                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid">
+                                <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid" style="min-height:262px; max-height:262px" >
                             </a>
                             <div class="social-list clearfix">
                                 <a href="{{team.facebook_link}}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
