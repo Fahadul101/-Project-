@@ -713,6 +713,9 @@ li.active.filtr-button.filtr a{
 .dropzone-design:hover {
     border: 2px dashed#f0151f;
 }
+.he {
+  padding: 1px;
+}
 
 
 @media (max-width: 992px) {
